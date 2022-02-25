@@ -9,8 +9,8 @@ body {
   height: 100vh;
   background: linear-gradient(
     90deg,
-    rgba(65, 104, 131, 1) 0%,
-    rgba(0, 232, 255, 1) 100%
+    rgb(74, 53, 131) 0%,
+    rgb(59, 97, 221) 100%
     );
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   padding: 30px 40px;
 }
 
-.task-container {
+.tasks-container {
   background-color: #fff;
   padding: 30px 20px;
   margin-top: 60px;
@@ -51,7 +51,7 @@ body {
 
 .new-task-input:focus {
   outline: none;
-  border-color: #41b883;
+  border-color: #413f96;
 }
 
 .new-task-button {
@@ -61,10 +61,43 @@ body {
   height: 100%;
   font-size: 1rem;
   border: none;
-  background-color: #41b883;
+  background-color: #413f96;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
   cursor: pointer;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.delete-item-taskbutton {
+  background-color: #413f96;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-item-taskbutton:hover {
+  background-color: rgb(219, 93, 93);
+}
+
+/* Utilities */
+.error {
+  border: 2px solid #f00;
+}
+
+.error::placeholder {
+  color: #f00;
+}
+
+.completed {
+  text-decoration: line-through double #f00;
 
 }
