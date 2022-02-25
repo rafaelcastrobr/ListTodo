@@ -5,6 +5,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 600px)
+{
+  .container {
+    width: 100%;
+  }
+
+  .new-task-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-task-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+}
+
 body {
   height: 100vh;
   background: linear-gradient(
@@ -21,6 +39,15 @@ body {
   justify-content: center;
   border: 2px solid #fff;
   padding: 30px 40px;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: rgb(56, 31, 31);
+  font-weight: bold;
+  font-size: large;
 }
 
 .tasks-container {
@@ -42,6 +69,7 @@ body {
 
 .new-task-input {
   flex: 3;
+  width: 100%;
   font-size: 1rem;
   border: 2px solid #d1d3d4;
   border-radius: 5px;
